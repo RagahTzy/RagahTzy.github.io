@@ -59,11 +59,23 @@
             position: relative;
             animation: glitch 1s linear infinite;
         }
+
+        @media (max-width: 600px) {
+            .glitch {
+                animation: none !important;
+                text-shadow: none !important;
+                transform: none !important;
+            }
+            .glitch:before,
+            .glitch:after {
+                display: none !important;
+            }
+        }
         
         @keyframes glitch {
-            2%, 64% { transform: translate(1px, 0) skew(0deg); }
-            4%, 60% { transform: translate(-1px, 0) skew(0deg); }
-            62% { transform: translate(0, 0) skew(2deg); }
+            2%, 64% { transform: translate(2px, 0) skew(0deg); }
+            4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+            62% { transform: translate(0, 0) skew(5deg); }
         }
         
         .glitch:before,
