@@ -15,12 +15,16 @@
         }
         
         body {
-            background-color: #0a0a0a;
+            background-color: #000000;
             color: #e2e8f0;
         }
         
         .mono {
             font-family: 'Share Tech Mono', monospace;
+        }
+
+        .glow-ring {
+            box-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 40px #00ff66;
         }
         
         .neon-text {
@@ -705,7 +709,7 @@
                 <div class="md:w-1/2 flex justify-center">
                     <div class="relative w-64 h-64 md:w-80 md:h-80">
                         <div class="absolute inset-0 rounded-full bg-[#00ff66]/10 animate-pulse"></div>
-                        <div class="absolute inset-1 rounded-full bg-black border-2 border-[#00ff66]/50 flex items-center justify-center overflow-hidden">
+                        <div class="absolute inset-1 rounded-full bg-black border-2 border-[#00ff66]/50 glow-ring flex items-center justify-center overflow-hidden">
                             <svg class="w-48 h-48 text-[#00ff66]/30" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <img src="muka.jpg" alt="muka gw" />
                             </svg>
